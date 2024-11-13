@@ -1,3 +1,14 @@
+D=ISO L=ISO
+
+E=USB E=USB
+
+robocopy L: E: /s /max:3800000000
+
+Dism /Split-Image /ImageFile:L:\sources\install.wim /SWMFile:E:\sources\install.swm /FileSize:3800
+
+
+
+
 D=ISO V=ISO
 
 E=USB K=USB
